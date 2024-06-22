@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Total width of the grid */
+    height: 960px; /* Adjust as needed */
+}
+
+.square {
+    width: calc(960px / 16); /* Each square takes up 1/16th of the container width */
+    height: calc(960px / 16); /* Each square takes up 1/16th of the container height */
+    border: 1px solid #ddd; /* Optional: border for each square */
+    box-sizing: border-box; /* Ensures borders are included in width/height calculations */
+}
